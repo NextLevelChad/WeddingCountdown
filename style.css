@@ -1,0 +1,691 @@
+:root {
+    --yellow--color: #FFD701;
+    --blue--color: rgb(0, 9, 88);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+
+Font Classes
+
+*/
+
+.script {
+    font-family: 'Parisienne', cursive;
+}
+
+.text {
+    font-family: 'Charm', cursive;
+}
+
+/*
+
+/*
+
+Helper Class
+
+*/
+
+.open {
+    z-index: 5000;
+    top: 100px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--yellow--color) ;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*
+
+Navigation Bar
+
+*/
+
+.navigation {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ height: 6rem;
+ width: 100%;
+
+
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem; 
+    font-size: 2rem;
+    color: var(--blue--color);
+
+}
+
+.navigation a:hover {
+    color: var(--yellow--color);
+}
+
+.navgiation a:visited, a:active{
+    color: var(--blue--color)
+}
+
+.menu {
+ display: none;
+}
+
+/*
+
+Sunflowers
+
+*/
+
+.sunflower-container {
+    position: relative;
+    width: 20vw;
+}
+
+.sunflower {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 5001;
+}
+
+.sunflower-container-right {
+    position: absolute;
+    top: -25%;
+    right: 0px;
+    width: 10vw;
+}
+
+.sunflower-right {
+    width: 100%;
+    height: auto;
+}
+
+.sunflower-container-left {
+    position: absolute;
+    width: 15vw;
+    top: -15%;
+    left: 0px;
+}
+
+.sunflower-left {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*
+
+Countdown
+
+*/
+
+
+
+
+#countdownContainer {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background-image: url('images/flowers-6158627_960_720.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+
+.countdownContainer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+#countdownContainer h1 {
+    margin-top: 10%;
+    color: var(--blue--color);
+    font-size: 3vw;
+    font-family: 'Parisienne', monospace;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+
+}
+
+
+#countdown {
+    color: var(--blue--color);
+    font-size: 3rem;
+    font-family: 'Parisienne', monospace;
+}
+
+
+/*
+
+Our Story Section
+
+*/
+
+
+
+
+
+
+#ourStoryContainer {
+    background-image: url("images/OurWeddingVenue.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38rem;
+    position: relative;
+}
+
+#ourStoryLabel {
+    position: absolute;
+    font-size: 11.25rem;
+    color: var(--yellow--color);
+    left: 3.75rem;
+
+
+
+}
+
+ #ourStoryFirstPic {
+    max-width: 50%;
+    height: auto;
+
+}
+
+#ourStorySecondPic {
+    max-width: 50%;
+    height: auto;
+
+} 
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    margin: 4rem;
+  }
+  
+.flex-item-left {
+    display: flex;
+    flex: 50%;
+    font-size: 2rem;
+    text-align: justify;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  
+  
+.flex-item-right {
+    display: flex;
+    flex: 50%;
+    font-size: 2rem;
+    text-align: justify;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#giftUs {
+    background-image: url("images/SunflowersForDonateCard.jpg");
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height: 74rem;
+    position: relative;
+    
+}
+
+.donateMainHeader {
+    position: absolute;
+    top: 2rem;
+    font-size: 6vw;
+    right: 1rem;
+
+
+}
+
+.donateSubHeader {
+    padding: 1rem;
+    margin: 20rem 2rem 0rem 2rem;
+    font-size: 4rem;
+    text-align: center;
+
+
+}
+
+.donateBTN {
+
+    display: flex;
+    text-decoration: none;
+    background-color: var(--yellow--color);
+    border-radius: 99px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 8rem;
+    width: 23.5rem;
+    justify-content: center;
+    font-family: 'Charm', monospace;
+    font-size: 4rem;
+    color: var(--blue--color);
+    align-items: center;
+    margin: 6rem;
+
+
+
+}
+
+.donateBTN:hover {
+    background-color: var(--yellow--color);
+}
+
+
+.navigation__mobile {
+    display: none;
+}
+
+/*
+
+Responsive CSS: Tablet (up to 1070px wide)
+
+*/
+
+@media only screen and (max-width: 1070px) {
+
+    .navigation__desktop {
+        display: none;
+    }
+
+    .navigation__mobile {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 10vh;
+
+
+    }
+
+    .mobile__menu {
+        display: none;
+        position: absolute;
+        
+    }
+
+    .menuIcon {
+        height: 150px;
+        width: 150px;
+    }
+
+    .sunflower-container {
+        position: relative;
+        width: 28vw;
+    }
+
+
+    .sunflower-container-right {
+        position: absolute;
+        top: -25%;
+        right: 0px;
+        width: 20vw;
+    }
+
+    .sunflower-container-left {
+        position: absolute;
+        width: 15vw;
+        top: -10%;
+        left: 0px;
+    }
+    
+    .sunflower-left {
+        width: 100%;
+        height: auto;
+    }
+    
+    .flex-item-right, .flex-item-left {
+        flex: 100%;
+    }
+
+    #countdownContainer h1 {
+        margin-top: 30vh;
+        color: var(--blue--color);
+        font-size: 3.5vw;
+        font-family: 'Parisienne', monospace;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+    
+    }
+    
+    
+    #countdown {
+        color: var(--blue--color);
+        font-size: 3.5vw;
+        font-family: 'Parisienne', monospace;
+    }
+
+    .flex-container {
+        margin: 2rem 2rem 6rem 2rem;
+    }
+
+
+    #ourStoryLabel {
+        position: absolute;
+        font-size: 20vw;
+        color: var(--yellow--color);
+        left: 1.5rem;
+    
+    
+    
+    }
+
+
+    #ourStoryFirstPic {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    #ourStorySecondPic {
+        max-width: 50%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    #giftUs {
+        background-image: url("images/SunflowersForDonateCard.jpg");
+        background-position:center;
+        background-size: cover;
+        width: 100%;
+        height: 74rem;
+        position: relative;
+        
+    }
+
+    .donateMainHeader {
+        font-size: 10vw;
+    }
+
+    .donateSubHeader {
+        margin-top: 10rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .donateBTN {
+        margin-top: 2rem;
+    }
+
+    
+ 
+    
+
+  }
+
+
+
+
+
+
+
+/*
+
+Responsive CSS: Mobile (up to 600px wide)
+
+*/
+
+@media only screen and (max-width: 600px) {
+
+    .navigation__desktop {
+        display: none;
+    }
+
+    .navigation__desktop a {
+        display: none;
+
+    }
+
+    .navigation__mobile {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 10vh;
+
+
+    }
+
+    .mobile__menu {
+        position: absolute;
+        top: -1000px;
+    }
+
+    #hamburgerMenu {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .menuIcon {
+        height: 100px;
+        width: 100px;
+    }
+
+    .sunflower-container {
+        position: relative;
+        width: 40vw;
+    }
+
+
+    .sunflower-container-right {
+        position: absolute;
+        top: -25%;
+        right: 0px;
+        width: 40vw;
+    }
+
+    .sunflower-container-left {
+        position: absolute;
+        width: 30vw;
+        top: -15%;
+        left: 0px;
+    }
+    
+    .sunflower-left {
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    .flex-item-right, .flex-item-left {
+        flex: 100%;
+    }
+
+    #countdownContainer h1 {
+        margin-top: 30vh;
+        color: var(--blue--color);
+        font-size: 4.0vw;
+        font-family: 'Parisienne', monospace;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+    
+    }
+    
+    
+    #countdown {
+        color: var(--blue--color);
+        font-size: 6vw;
+        font-family: 'Parisienne', monospace;
+    }
+
+    .flex-container {
+        margin: 2rem 2rem 6rem 2rem;
+    }
+
+
+    #ourStoryLabel {
+        position: absolute;
+        font-size: 30vw;
+        color: var(--yellow--color);
+        left: 1.5rem;
+    
+    
+    
+    }
+
+    .flex-item-left {
+        font-size: 1rem;
+        padding: .25rem;
+      }
+    
+      
+      
+    .flex-item-right {
+        font-size: 1rem;
+        padding: .25rem;
+    }
+
+
+    #ourStoryFirstPic {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    #ourStorySecondPic {
+        max-width: 50%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+
+    #giftUs {
+        background-image: url("images/SunflowersForDonateCard.jpg");
+        background-position:center;
+        background-size: cover;
+        width: 100%;
+        height: 40rem;
+        position: relative;
+        
+    }
+    
+    .donateMainHeader {
+        position: absolute;
+        top: 2rem;
+        font-size: 3rem;
+        right: 1rem;
+    
+    
+    }
+    
+    .donateSubHeader {
+        margin-top: 1rem;
+        font-size: 2rem;
+    
+    
+    }
+    
+    .donateBTN {
+    
+        display: flex;
+        text-decoration: none;
+        background-color: var(--yellow--color);
+        border-radius: 99px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        height: auto;
+        width: 65%;
+        justify-content: center;
+        font-family: 'Charm', monospace;
+        font-size: 2rem;
+        color: var(--blue--color);
+        align-items: center;
+        margin:  0rem 2rem 2rem 2rem;
+    
+    
+    
+    }
+    
+ 
+    
+
+  }
+
+
+

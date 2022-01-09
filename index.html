@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Charm&family=Parisienne&display=swap" rel="stylesheet">    
+
+    
+
+    <title>Our Wedding Countdown</title>
+</head>
+<body>
+    <div class="sunflower-container">
+        <img src="images\Sunflower_clip_art-top_left.png" class="sunflower" />
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+
+
+        <div class="navigation__desktop">
+            <a href="#countdown" class="script">Countdown</a>
+            <a href="#OurStory" class="script">Our Story</a>
+            <a href="#GiftDonation" class="script">Gift Donation</a>
+        </div>
+
+        <div class="navigation__mobile">
+            <div id="hamburgerMenu">
+                <a href="#" class="menuIcon" onclick="openMenu()"><i class="fa fa-bars"></i> </a>
+            </div>
+            <div class="mobile__menu" id="mobile__menu">
+                <a href="#countdown" onclick="openMenu()" class="text">Countdown</a>
+                <a href="#OurStory" onclick="openMenu()" class="text">Our Story</a>
+                <a href="#GiftDonation" onclick="openMenu()" class="text">Gift Donation</a>
+            </div>
+        </div>
+
+    </div>
+
+
+     <!-- Countdown -->
+    <div id="countdownContainer">
+        <div class="countdownContainer__content">
+            <h1>We are getting married in...</h1>
+            <p id="countdown"> </p>
+        </div>
+    </div>
+
+
+
+
+     <!-- Our Story -->
+
+    <div class="container" id="ourStoryContainer">
+        <div class="sunflower-container-right">
+            <img src="images\Sunflower_clip_art-right_side.png" class="sunflower-right" />
+        </div>
+        <h1 id="ourStoryLabel" class="script">Our<br>Story...</h1>
+    </div>
+    <div class="" >
+        <div class="flex-container" id="OurStory">
+
+            <p class="text flex-item-left">Cari and I met through online dating in late 2018 and began dating January 6th, of 2019. Almost instantly we realized that we were a great fit, we both confessed that being with each other was exciting, fun, and easy. 
+                Though life has definitely thrown us some curve balls (I'm looking at you World Pandemic!) we have never once faltered on our feeling that this was a forever type of love.
+            </p>
+
+            <div class="flex-item-right">
+                <div class="flex-container">
+                    <img src="images/earlyOn.jpg" id="ourStorySecondPic"  class="flex-item-left"/>
+                    <img src="images/SummerFun.jpg" id="ourStorySecondPic" class="flex-item-right"/>
+                    <img src="images/christmasParty.jpg" id="ourStorySecondPic"  class="flex-item-left"/>
+                    <img src="images/boughtHouse.jpg" id="ourStorySecondPic"  class="flex-item-right"/>
+                </div>
+            </div>
+
+            <div class="flex-item-left">
+                <div class="flex-container">
+                    <img src="images/DayOfEngagement.jpg" id="ourStorySecondPic"  class="flex-item-left"/>
+                    <img src="images/loudtn-omni-louisville-pool-private-reception-terrace.jpg" id="ourStorySecondPic" class="flex-item-right"/>
+                    <img src="images/ringInBox.jpg" id="ourStorySecondPic"  class="flex-item-left"/>
+                    <img src="images/us.jpg" id="ourStorySecondPic"  class="flex-item-right"/>
+                </div>
+            </div>
+
+            <p class="text flex-item-right">After waiting through 2020's COVID, and while on a trip to Louisville Kentucky Memorial Day 2021, I popped the question at the Omni Hotel on the pool deck while overlooking downtown Louisville. She said yes, and 
+                we started the journey toward our wedding countdown.  
+            </p>
+
+        </div>
+    </div>
+
+
+     <!-- Gift Us -->
+    <div class="container" id="giftUs">
+        <div class="sunflower-container-left">
+            <img src="images/Sunflower_clip_art-left_side.png" class="sunflower-left" />
+        </div>
+    
+
+        <h1 class="script donateMainHeader" id="GiftDonation">If you'd like<br>to gift us...</h1>
+        <h2 class="text donateSubHeader">Please consider donating to our honeymoon fund</h2>
+        <a href="https://www.honeyfund.com/wedding/kennedy-mccarthy-11-03-2022" class="donateBTN">Donate</a>
+    </div>
+    
+    <script src="script.js" > </script>
+</body>
+</html>
