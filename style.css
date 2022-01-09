@@ -516,11 +516,6 @@ Responsive CSS: Mobile (up to 600px wide)
         display: none;
     }
 
-    .navigation__desktop a {
-        display: none;
-
-    }
-
     .navigation__mobile {
         display: flex;
         justify-content: end;
@@ -533,13 +528,14 @@ Responsive CSS: Mobile (up to 600px wide)
     }
 
     .mobile__menu {
+        display: none;
         position: absolute;
-        top: -1000px;
+        
     }
 
-    #hamburgerMenu {
-        width: 100%;
-        height: 10vh;
+    .menuIcon {
+        height: 150px;
+        width: 150px;
     }
 
     .menuIcon {
